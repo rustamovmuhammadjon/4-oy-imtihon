@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(227, 228, 229, 0.9);
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background-color: rgb(230, 11, 11);
+    animation-name: tushish;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    transition: ease-out 0.5s;
+    margin-top: -100px;
+    animation-fill-mode: forwards;
+}
+@keyframes tushish {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100px);
+    }
+}
+.navbar-box {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.item {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+}
+.item:hover {
+    color: rgb(81, 226, 255);
+}
+.admin {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+}
+.admin:hover {
+    color: rgb(81, 226, 255);
+}
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin-top: 60px;
+    gap: 30px;
+}
+.posts-list li {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+    gap: 10px;
+    background-color: #333;
+    list-style-type: none;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+}
+.posts-list li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+}
+.search-box {
+    width: 100%;
+    padding-top: 100px;
+}
+.short-search-box {
+    width: 70px;
+    justify-content: center;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    border: 0;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s;
+}
+.input-box {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    border: 0;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s;
+    padding-right: 10px;
+}
+.short-input-box {
+    width: 0%;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    border: 0;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 1s;
+    font-family: 'Nunito', sans-serif;
+}
+.search-input {
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    font-size: 26px;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: all 1s;
+}
+.search-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+.posts-list p {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+}
+.none {
+    display: none;
+}
